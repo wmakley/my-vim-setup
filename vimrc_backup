@@ -29,6 +29,13 @@ set hidden
 set wildmenu
 set linebreak
 
+let mapleader=","
+
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
 "xml plugin
 let xml_use_xhtml = 1
 
@@ -41,13 +48,10 @@ set nobackup
 set nowb
 set noswapfile
 
-"fuzzy finder
-"map <C-t> :FufFile<Enter>
 
 "command-t
-let mapleader=","
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>f :CommandT<cr>
 map <leader>F :CommandT %%<cr>
-set wildignore+=public/product_image/**,public/product/**,public/slide/**,public/callout/**,import/product/**,import/product_image/**,*images/**,*.git/**,*.svn/**
+set wildignore+=public/product_image/**,public/product/**,public/slide/**,public/callout/**,import/product/**,import/product_image/**,*images/**,*.git/**,*.svn/**,index/**,vendor/cache/**,*.DS_Store*,public/system/**,public/themes/**,public/javascripts/cache/**,public/stylesheets/cache/**
 
