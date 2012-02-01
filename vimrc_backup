@@ -24,14 +24,14 @@ set incsearch
 set hlsearch
 set ignorecase
 set smartcase
-set hidden
+"set hidden
 "set virtualedit=all
 set wildmenu
 set linebreak
 
 let mapleader=","
 
-" Shortcut to rapidly toggle `set list`
+" Shortcut to rapidly toggle 'set list'
 nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
