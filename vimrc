@@ -1,10 +1,6 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-" font & color scheme
-colorscheme herald
-set guifont=Monospace\ 9
-
 set nocompatible
 " tabs
 set expandtab
@@ -50,7 +46,7 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " automatically reload files and .vimrc
 set autoread
-autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
+"autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
 
 " Turn backup off, since most stuff is in SVN, git anyway...
 set nobackup
