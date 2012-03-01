@@ -60,5 +60,5 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>f :CommandT<cr>
 map <leader>F :CommandT %%<cr>
 map <leader>u :CommandTFlush<cr>:CommandT<cr>
-set wildignore+=public/product/**,public/product_image/**,public/product_document/**,public/product/**,public/category/**,public/category_document/**,public/slide/**,public/callout/**,import/product/**,import/product_image/**,*images/**,*.git/**,*.svn/**,index/**,vendor/cache/**,*.DS_Store*,public/system/**,public/themes/**,public/javascripts/cache/**,public/stylesheets/cache/**
+set wildignore+=public/product/**,public/product_image/**,public/product_document/**,public/product/**,public/category/**,public/category_document/**,public/slide/**,public/callout/**,import/product/**,import/product_image/**,*images/**,*.git/**,*.svn/**,import/**,price_book/**,index/**,vendor/cache/**,*.DS_Store*,public/system/**,public/themes/**,*/tiny_mce/**,public/javascripts/cache/**,public/stylesheets/cache/**
 
