@@ -32,9 +32,6 @@ nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
-"xml plugin
-let xml_use_xhtml = 1
-
 filetype plugin on
 filetype indent on
 
