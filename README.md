@@ -1,10 +1,9 @@
-# To install read-only:
+# To install:
 
     $ cd ~
-    $ git clone git://github.com/wmakley/my-vim-setup.git .vim
+    $ git clone https://github.com/wmakley/my-vim-setup.git .vim
     $ cd .vim
-    $ git submodule init
-    $ git submodule update
+    $ git submodule init && git submodule update
     $ cd bundle/command-t
     $ rake make
     $ cd ~
