@@ -33,9 +33,6 @@ nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
-"xml plugin
-let xml_use_xhtml = 1
-
 filetype plugin on
 filetype indent on
 
@@ -45,6 +42,7 @@ autocmd FileType css setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType ddl set ft=sql
+autocmd FileType markdown setlocal ts=4 sts=4 sw=4 expandtab
 
 " automatically reload files and .vimrc
 set autoread
@@ -61,5 +59,5 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>f :CommandT<cr>
 map <leader>F :CommandT %%<cr>
 map <leader>u :CommandTFlush<cr>:CommandT<cr>
-set wildignore+=doc/app/**,public/product/**,public/product_image/**,public/product_document/**,public/category/**,public/category_document/**,public/slide/**,public/callout/**,import/product/**,import/product_image/**,*images/**,*.git/**,*.svn/**,import/**,price_book/**,index/**,vendor/cache/**,vendor/rails.old/**,*.DS_Store*,public/system/**,public/themes/**,*/tiny_mce/**,public/javascripts/cache/**,public/stylesheets/cache/**
+set wildignore+=tmp/**,doc/app/**,public/product/**,public/product_image/**,public/product_document/**,public/category/**,public/category_document/**,public/slide/**,public/callout/**,import/product/**,import/product_image/**,*images/**,*.git/**,*.svn/**,import/**,price_book/**,index/**,*plugins-*,*rails.old*,vendor/cache/**,*.DS_Store*,public/system/**,public/themes/**,*/tiny_mce/**,public/javascripts/cache/**,public/stylesheets/cache/**
 
