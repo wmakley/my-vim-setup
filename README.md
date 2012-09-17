@@ -7,5 +7,5 @@
     $ cd bundle/command-t
     $ rake make
     $ cd ~
-    $ ln -sv .vimrc .vim/vimrc
-    $ ln -sv .gvimrc .vim/gvimrc
+    $ ln -sv .vim/vimrc .vimrc 
+    $ ln -sv .vim/gvimrc .gvimrc 
