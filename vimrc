@@ -48,6 +48,9 @@ autocmd FileType markdown setlocal ts=4 sts=4 sw=4 expandtab
 set autoread
 "autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
 
+" nginx syntax higlighting
+au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif 
+
 " Turn backup off, since most stuff is in SVN, git anyway...
 set nobackup
 set nowb
