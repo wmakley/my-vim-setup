@@ -4,6 +4,6 @@ git submodule update --init
 cd bundle/command-t
 rake make
 pushd $HOME
-ln -sfv .vim/vimrc .vimrc 
-ln -sfv .vim/gvimrc .gvimrc
+ln -nsfv .vim/vimrc .vimrc
+ln -nsfv .vim/gvimrc .gvimrc
 popd
