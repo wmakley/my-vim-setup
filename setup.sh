@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eu
-git submodule init && git submodule update
+git submodule update --init
 cd bundle/command-t
 rake make
 pushd $HOME
