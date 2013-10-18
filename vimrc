@@ -25,6 +25,7 @@ set smartcase
 "set virtualedit=all
 set wildmenu
 set linebreak
+set modeline
 
 let mapleader=","
 
