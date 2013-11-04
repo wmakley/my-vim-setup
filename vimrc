@@ -45,6 +45,9 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType ddl set ft=sql
 autocmd FileType markdown setlocal ts=4 sts=4 sw=4 expandtab
 
+" try to autodetect indent style
+autocmd BufReadPost * :DetectIndent
+
 " automatically reload files and .vimrc
 set autoread
 "autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
