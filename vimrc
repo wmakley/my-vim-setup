@@ -34,6 +34,9 @@ nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
+" Shortcut to toggle auto-indent of pasted code
+set pastetoggle=<leader>v
+
 filetype plugin on
 filetype indent on
 
