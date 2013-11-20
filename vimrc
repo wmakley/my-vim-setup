@@ -25,6 +25,7 @@ set smartcase
 "set virtualedit=all
 set wildmenu
 set linebreak
+set modeline
 
 let mapleader=","
 
@@ -32,6 +33,9 @@ let mapleader=","
 nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
+
+" Shortcut to toggle auto-indent of pasted code
+set pastetoggle=<leader>v
 
 filetype plugin on
 filetype indent on
@@ -43,6 +47,9 @@ autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType ddl set ft=sql
 autocmd FileType markdown setlocal ts=4 sts=4 sw=4 expandtab
+
+" try to autodetect indent style
+autocmd BufReadPost * :DetectIndent
 
 " automatically reload files and .vimrc
 set autoread
