@@ -1,5 +1,6 @@
 #!/bin/bash
 set -eu
+cd $(dirname "$0")
 git submodule init && git submodule update
 cd bundle/command-t
 rake make
