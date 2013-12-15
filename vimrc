@@ -60,11 +60,10 @@ set nobackup
 set nowb
 set noswapfile
 
-
-"command-t
-cnoremap %% <C-R>=expand('%:h').'/'<cr>
-map <leader>f :CommandT<cr>
-map <leader>F :CommandT %%<cr>
-map <leader>u :CommandTFlush<cr>:CommandT<cr>
-set wildignore+=vendor/bundle,tmp/**,doc/app/**,doc/plugins/**,public/product/**,public/product_image/**,public/product_document/**,public/category/**,public/category_document/**,public/category_image/**,public/slide/**,public/callout/**,import/product/**,import/product_image/**,*images/**,*.git/**,*.svn/**,import/**,price_book/**,index/**,*plugins-*,*rails.old*,vendor/cache/**,*.DS_Store*,public/system/**,public/themes/**,*/tiny_mce/**,public/javascripts/cache/**,public/stylesheets/cache/**
+" ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+map <leader>f <c-p>
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.git/**,*.svn/**
+let g:ctrlp_custom_ignore = 'vendor/bundle|tmp|doc/app|doc/plugins|public/product|public/product_image|public/product_document|public/category|public/category_document|public/category_image|public/slide|public/callout|\.git|\.svn|import|price_book|index|plugins-|rails\.old|vendor/cache|\.DS_Store|public/system|public/themes|tiny_mce|public/javascripts/cache|public/stylesheets/cache'
 
