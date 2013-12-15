@@ -35,19 +35,18 @@ set listchars=tab:▸\ ,trail:.,eol:¬
 " Shortcut to toggle auto-indent of pasted code
 set pastetoggle=<leader>v
 
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 
-" tortus CSS files use tab characters
-autocmd FileType css setlocal ts=4 sts=4 sw=4 noexpandtab 
-" Syntax of these languages is fussy over tabs vs spaces
-autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+" Detect extensions vim has no clue about
 autocmd FileType ddl set ft=sql
-autocmd FileType markdown setlocal ts=4 sts=4 sw=4 expandtab
 
 " try to autodetect indent style
 autocmd BufReadPost * :DetectIndent
+
+" Syntax of these languages is fussy over tabs vs spaces
+autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType markdown setlocal ts=4 sts=4 sw=4 expandtab
 
 " automatically reload files and .vimrc
 set autoread
