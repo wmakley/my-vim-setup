@@ -1,6 +1,7 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+filetype plugin indent on
 syntax on
 set nocompatible
 " tabs
@@ -34,8 +35,6 @@ set listchars=tab:▸\ ,trail:.,eol:¬
 
 " Shortcut to toggle auto-indent of pasted code
 set pastetoggle=<leader>v
-
-filetype plugin indent on
 
 " Detect extensions vim has no clue about
 autocmd FileType ddl set ft=sql
