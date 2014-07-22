@@ -8,6 +8,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'https://github.com/mileszs/ack.vim.git'
 Plugin 'https://github.com/ciaranm/detectindent.git'
 Plugin 'https://github.com/chrisbra/csv.vim.git'
 Plugin 'https://github.com/kien/ctrlp.vim.git'
