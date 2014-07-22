@@ -26,7 +26,6 @@ call vundle#end()
 filetype plugin indent on
 
 syntax on
-set nocompatible
 " tabs
 set expandtab
 set softtabstop=2
