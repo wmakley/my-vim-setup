@@ -1,7 +1,28 @@
-call pathogen#infect()
-call pathogen#helptags()
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'https://github.com/ciaranm/detectindent.git'
+Plugin 'https://github.com/chrisbra/csv.vim.git'
+Plugin 'https://github.com/kien/ctrlp.vim.git'
+Plugin 'https://github.com/tpope/vim-cucumber.git'
+Plugin 'https://github.com/tpope/vim-haml.git'
+Plugin 'https://github.com/jinfield/vim-nginx.git'
+Plugin 'https://github.com/tpope/vim-rails.git'
+Plugin 'https://github.com/slim-template/vim-slim.git'
+Plugin 'https://github.com/MarcWeber/vim-addon-mw-utils.git'
+Plugin 'https://github.com/garbas/vim-snipmate.git'
+Plugin 'https://github.com/honza/vim-snippets.git'
+
+call vundle#end()
 filetype plugin indent on
+
 syntax on
 set nocompatible
 " tabs
