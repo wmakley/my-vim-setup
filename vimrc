@@ -10,6 +10,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'https://github.com/mileszs/ack.vim.git'
 Plugin 'https://github.com/ciaranm/detectindent.git'
+Plugin 'https://github.com/tpope/vim-commentary.git'
 Plugin 'https://github.com/chrisbra/csv.vim.git'
 Plugin 'https://github.com/kien/ctrlp.vim.git'
 Plugin 'https://github.com/tpope/vim-cucumber.git'
