@@ -3,6 +3,7 @@ set -eu
 cd "$(dirname "$0")"
 
 rm -rfv bundle/*
+rm -rfv vim-pathogen
 
 # check out plugins
 git submodule update --init
