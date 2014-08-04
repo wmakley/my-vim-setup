@@ -2,6 +2,8 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
+" to reload plugins: reload .vimrc, and run either :PluginInstall
+" or vim +PluginInstall +qall
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
