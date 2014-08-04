@@ -22,6 +22,7 @@ Plugin 'https://github.com/vim-scripts/tlib.git'
 Plugin 'https://github.com/MarcWeber/vim-addon-mw-utils.git'
 Plugin 'https://github.com/garbas/vim-snipmate.git'
 Plugin 'https://github.com/honza/vim-snippets.git'
+Plugin 'https://github.com/tpope/vim-surround.git'
 
 call vundle#end()
 filetype plugin indent on
