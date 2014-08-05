@@ -40,7 +40,7 @@ set backspace=indent,eol,start
 
 set showmatch " highlight all search results
 set guioptions-=T " disable bell
-set ruler
+set ruler " show cursor position in status bar
 set nohls
 set incsearch
 set hlsearch
