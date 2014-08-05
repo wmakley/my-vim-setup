@@ -1,6 +1,6 @@
 " font & color scheme
 colorscheme herald
-set guifont=Monospace\ 9
+set guifont=Menlo\ Regular:h12
 set number
 map <A-c> "+y
 map <A-x> "+d
