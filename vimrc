@@ -38,8 +38,8 @@ set shiftwidth=2
 set smarttab
 set backspace=indent,eol,start
 
-set showmatch
-set guioptions-=T
+set showmatch " highlight all search results
+set guioptions-=T " disable bell
 set ruler
 set nohls
 set incsearch
