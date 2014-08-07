@@ -20,9 +20,11 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-bufferline'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'https://github.com/scrooloose/syntastic.git'
 Plugin 'bling/vim-airline'
 
 Plugin 'https://github.com/mileszs/ack.vim.git'
+Plugin 'https://github.com/Raimondi/delimitMate.git'
 Plugin 'https://github.com/majutsushi/tagbar.git'
 Plugin 'https://github.com/ciaranm/detectindent.git'
 Plugin 'https://github.com/tpope/vim-commentary.git'
@@ -72,6 +74,9 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#csv#enabled = 1
 set laststatus=2 " always show airline status bar
 set noshowmode
+
+" syntastic
+let g:syntastic_ruby_exec = 'ruby'
 
 let mapleader=","
 
