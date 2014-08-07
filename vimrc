@@ -10,6 +10,12 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" vim-airline and integrations
+Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-bufferline'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'bling/vim-airline'
+
 Plugin 'https://github.com/mileszs/ack.vim.git'
 Plugin 'https://github.com/ciaranm/detectindent.git'
 Plugin 'https://github.com/tpope/vim-commentary.git'
@@ -17,7 +23,6 @@ Plugin 'https://github.com/chrisbra/csv.vim.git'
 Plugin 'https://github.com/kien/ctrlp.vim.git'
 Plugin 'https://github.com/tpope/vim-cucumber.git'
 Plugin 'https://github.com/tpope/vim-haml.git'
-Plugin 'airblade/vim-gitgutter'
 Plugin 'https://github.com/jinfield/vim-nginx.git'
 Plugin 'https://github.com/tpope/vim-rails.git'
 Plugin 'https://github.com/slim-template/vim-slim.git'
@@ -52,6 +57,14 @@ set smartcase "make search case-sensitive if any upper-case letters are typed
 set wildmenu
 set linebreak
 set modeline
+
+"== AIRLINE SETUP ==
+"Automatically displays all buffers when there's only one tab open.
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#csv#enabled = 1
+set laststatus=2 " always show airline status bar
+set noshowmode
 
 let mapleader=","
 
