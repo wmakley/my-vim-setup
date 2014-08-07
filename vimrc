@@ -17,6 +17,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 
 Plugin 'https://github.com/mileszs/ack.vim.git'
+Plugin 'https://github.com/majutsushi/tagbar.git'
 Plugin 'https://github.com/ciaranm/detectindent.git'
 Plugin 'https://github.com/tpope/vim-commentary.git'
 Plugin 'https://github.com/chrisbra/csv.vim.git'
