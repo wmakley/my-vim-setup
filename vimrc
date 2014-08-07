@@ -39,16 +39,16 @@ set shiftwidth=2
 set smarttab
 set backspace=indent,eol,start
 
-set showmatch " highlight all search results
+set showmatch "highlight matching bracket when closing bracket is inserted
 set guioptions-=T " disable bell
 set ruler " show cursor position in status bar
 set nohls
-set incsearch
-set hlsearch
-set ignorecase
-set smartcase
+set incsearch "update search live while typing
+set hlsearch "highlight all search results
+set ignorecase "make search case-insensitive
+set smartcase "make search case-sensitive if any upper-case letters are typed
 "set hidden
-"set virtualedit=all
+"set virtualedit=all " allow moving cursor where no characters exist
 set wildmenu
 set linebreak
 set modeline
