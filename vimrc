@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+
 " set the runtime path to include Vundle and initialize
 " to reload plugins: reload .vimrc, and run either:
 "
@@ -46,6 +47,8 @@ Plugin 'https://github.com/nelstrom/vim-textobj-rubyblock.git'
 
 call vundle#end()
 filetype plugin indent on
+
+runtime macros/matchit.vim "needed for rubyblock plugin
 
 syntax on
 " tabs
