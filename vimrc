@@ -114,5 +114,33 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 map <leader>f <c-p>
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.git/**,*.svn/**
-let g:ctrlp_custom_ignore = 'vendor/bundle|tmp|doc/app|doc/plugins|public/product|public/product_image|public/product_document|public/category|public/category_document|public/category_image|public/slide|public/callout|\.git|\.svn|import|price_book|index|plugins-|rails\.old|vendor/cache|\.DS_Store|public/system|public/themes|tiny_mce|public/javascripts/cache|public/stylesheets/cache'
+"let g:ctrlp_custom_ignore = 'vendor/bundle|tmp|doc/app|doc/plugins|public/product|public/product_image|public/product_document|public/category|public/category_document|public/category_image|public/slide|public/callout|\.git|\.svn|import|price_book|index|plugins-|rails\.old|vendor/cache|\.DS_Store|public/system|public/themes|tiny_mce|public/javascripts/cache|public/stylesheets/cache'
+" use git for autocomplete
+let g:ctrlp_use_caching = 0
+if executable('ag')
+    set grepprg=ag\ --nogroup\ --nocolor
+
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+else
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+  let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<space>', '<cr>', '<2-LeftMouse>'],
+    \ }
+endif
+
+" Automatically jump to end of text you pasted:
+vnoremap <silent> y y`]
+vnoremap <silent> p p`]
+nnoremap <silent> p p`]
+
+" vp doesn't replace paste buffer
+function! RestoreRegister()
+  let @" = s:restore_reg
+  return ''
+endfunction
+function! s:Repl()
+  let s:restore_reg = @"
+  return "p@=RestoreRegister()\<cr>"
+endfunction
+vmap <silent> <expr> p <sid>Repl()
 
