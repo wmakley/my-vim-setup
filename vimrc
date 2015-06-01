@@ -41,6 +41,9 @@ Plugin 'https://github.com/garbas/vim-snipmate.git'
 Plugin 'https://github.com/honza/vim-snippets.git'
 Plugin 'https://github.com/tpope/vim-surround.git'
 
+Plugin 'https://github.com/kana/vim-textobj-user.git'
+Plugin 'https://github.com/nelstrom/vim-textobj-rubyblock.git'
+
 call vundle#end()
 filetype plugin indent on
 
