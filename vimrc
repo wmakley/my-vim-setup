@@ -44,7 +44,7 @@ Plugin 'https://github.com/tpope/vim-surround.git'
 
 Plugin 'https://github.com/kana/vim-textobj-user.git'
 Plugin 'https://github.com/nelstrom/vim-textobj-rubyblock.git'
-Plugin 'https://github.com/editorconfig/editorconfig-vim.git'
+"Plugin 'https://github.com/editorconfig/editorconfig-vim.git'
 
 call vundle#end()
 filetype plugin indent on
@@ -76,10 +76,13 @@ set modeline
 set showcmd
 
 "== AIRLINE SETUP ==
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1 " uncomment if you have powerline fonts installed
 let g:airline#extensions#csv#enabled = 1
 set laststatus=2 " always show airline status bar
 set noshowmode
+
+"== EDITORCONFIG ==
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
 " syntastic
 let g:syntastic_ruby_exec = 'ruby'
