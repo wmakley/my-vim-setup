@@ -92,7 +92,7 @@ let mapleader=","
 " Shortcut to rapidly toggle 'set list'
 nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:▸\ ,trail:.,eol:¬
+"set listchars=tab:▸\ ,trail:.,eol:¬
 
 " Shortcut to toggle auto-indent of pasted code
 set pastetoggle=<leader>v
