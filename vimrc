@@ -44,6 +44,7 @@ Plugin 'https://github.com/tpope/vim-surround.git'
 
 Plugin 'https://github.com/kana/vim-textobj-user.git'
 Plugin 'https://github.com/nelstrom/vim-textobj-rubyblock.git'
+Plugin 'https://github.com/editorconfig/editorconfig-vim.git'
 
 call vundle#end()
 filetype plugin indent on
