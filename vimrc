@@ -23,7 +23,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'https://github.com/scrooloose/syntastic.git'
 " Plugin 'bling/vim-airline'
 
-"Plugin 'https://github.com/mileszs/ack.vim.git'
+Plugin 'https://github.com/mileszs/ack.vim.git'
 " Plugin 'https://github.com/Raimondi/delimitMate.git'
 " Plugin 'https://github.com/majutsushi/tagbar.git'
 Plugin 'https://github.com/ciaranm/detectindent.git'
