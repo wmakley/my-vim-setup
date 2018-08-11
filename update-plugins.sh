@@ -9,3 +9,5 @@ for P in *; do
 	popd
 done
 popd
+
+git submodule update
